@@ -1,0 +1,57 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 50px;
+}
+
+/* Game Board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/* Cells */
+.cell {
+    width: 100px;
+    height: 100px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.cell.taken {
+    cursor: not-allowed;
+}
+
+/* Game Status */
+.status {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Reset Button */
+.reset {
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    background: red;
+    color: white;
+    border-radius: 5px;
+}
+
+.reset:hover {
+    background: darkred;
+}
